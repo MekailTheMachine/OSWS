@@ -30,36 +30,34 @@ def walker():
         bank_near_inv()
         sleepif()
         click()
+        sleep()
         deposit_all()
+        sleep()
         sleepif() 
         click()
         bank_slot(7)
         sleepif()
         click()
         bank_slot(8)
-        sleep(1)
-        if rnd.random() > 0.5:
-            get_all_items()
-        else:
-            get_x_items()
+        sleep(.5, .5)
+        get_x_items()
         sleepif()
-
+        sleep(.5, .5)
         exit_bank()
+        sleep(.01, .5)
         sleepif()
         click()
-        sleep(3)
+        sleep(3) 
         inv_slot(1)
         sleepif()
         click()
         inv_slot(2)
         sleepif()
         click()
-        sleep(2, 3)
+        sleep(.5, 3)
         spacekey()
-        sleep(16,10)
-
-
-
+        sleep(30 ,30)
+        
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Main Program
